@@ -1,0 +1,454 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RadheKrishna Garba Classes - Learn Traditional Dance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Inter', 'sans-serif'],
+                        'script': ['Dancing Script', 'cursive'],
+                    },
+                    colors: {
+                        'dark': {
+                            50: '#f8fafc',
+                            100: '#f1f5f9',
+                            200: '#e2e8f0',
+                            300: '#cbd5e1',
+                            400: '#94a3b8',
+                            500: '#64748b',
+                            600: '#475569',
+                            700: '#334155',
+                            800: '#1e293b',
+                            900: '#0f172a',
+                            950: '#020617'
+                        },
+                        'gold': {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309'
+                        }
+                    },
+                    backgroundImage: {
+                        'cultural-pattern': "url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23f59e0b\" fill-opacity=\"0.05\"%3E%3Cpath d=\"M30 30c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')"
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+            background-attachment: fixed;
+        }
+        
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(251, 191, 36, 0.1);
+        }
+        
+        .cultural-accent::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--tw-gradient-to-r);
+            opacity: 0.03;
+            pointer-events: none;
+        }
+        
+        .glow-border {
+            box-shadow: 0 0 20px rgba(251, 191, 36, 0.1);
+        }
+        
+        .hover-lift {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .hover-lift:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 30px rgba(251, 191, 36, 0.15);
+        }
+    </style>
+</head>
+<body class="min-h-screen text-gray-100 font-sans">
+    <!-- @COMPONENT: Navigation -->
+    <nav class="sticky top-0 z-50 glass-card glow-border">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-4">
+                    <!-- Cultural dance icon placeholder -->
+                    <div class="w-12 h-12 bg-gradient-to-br from-gold-400 to-gold-600 rounded-full flex items-center justify-center">
+                        <span class="material-icons text-dark-900 text-2xl">celebration</span>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl md:text-3xl font-serif font-bold text-gold-400">RadheKrishna</h1>
+                        <p class="text-sm font-script text-gold-300">Garba Classes</p>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <button class="md:hidden p-2 rounded-lg hover:bg-dark-700 transition-colors">
+                    <span class="material-icons text-gold-400">menu</span>
+                </button>
+                
+                <!-- Desktop navigation -->
+                <div class="hidden md:flex items-center gap-6">
+                    <a href="#classes" class="text-gray-300 hover:text-gold-400 transition-colors font-medium">Classes</a>
+                    <a href="#instructor" class="text-gray-300 hover:text-gold-400 transition-colors font-medium">Instructor</a>
+                    <a href="#register" class="bg-gold-500 hover:bg-gold-600 text-dark-900 px-6 py-2 rounded-lg font-semibold transition-colors">Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- @END_COMPONENT: Navigation -->
+
+    <div class="container mx-auto px-4 py-8 space-y-8">
+        <!-- @COMPONENT: Hero Section -->
+        <div class="glass-card rounded-2xl p-8 md:p-12 hover-lift relative overflow-hidden cultural-accent">
+            <div class="relative z-10">
+                <h2 class="text-3xl md:text-5xl font-serif font-bold text-white mb-4 leading-tight">
+                    Transform your dance skills in just 
+                    <span class="text-gold-400">10 days!</span>
+                </h2>
+                <p class="text-xl md:text-2xl text-gray-300 mb-2 font-medium">No prior Experience needed</p>
+                <p class="text-lg text-gold-300 font-script mb-8">એ હાલો ગરબા શીખવા...</p>
+                
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button class="bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-dark-900 font-bold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg">
+                        Register Now
+                    </button>
+                    <button class="border-2 border-gold-400 text-gold-400 hover:bg-gold-400 hover:text-dark-900 font-semibold py-4 px-8 rounded-xl transition-all duration-300">
+                        <span class="material-icons inline mr-2">play_circle</span>
+                        Watch Demo
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Decorative elements -->
+            <div class="absolute top-0 right-0 w-32 h-32 bg-gold-400 opacity-5 rounded-full -translate-y-16 translate-x-16"></div>
+            <div class="absolute bottom-0 left-0 w-24 h-24 bg-purple-500 opacity-5 rounded-full translate-y-12 -translate-x-12"></div>
+        </div>
+        <!-- @END_COMPONENT: Hero Section -->
+
+        <!-- @COMPONENT: Class Details Grid -->
+        <div class="grid md:grid-cols-2 gap-8" id="classes">
+            <!-- Class Schedule Card -->
+            <div class="glass-card rounded-2xl p-8 hover-lift">
+                <h3 class="text-2xl font-serif font-bold text-gold-400 mb-6 flex items-center gap-3">
+                    <span class="material-icons text-3xl">schedule</span>
+                    Class Details
+                </h3>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4 p-3 rounded-lg bg-dark-800/50">
+                        <span class="material-icons text-gold-400">access_time</span>
+                        <span class="text-gray-300 font-medium">1 Hr daily classes</span>
+                    </div>
+                    <div class="flex items-center gap-4 p-3 rounded-lg bg-dark-800/50">
+                        <span class="material-icons text-emerald-400">celebration</span>
+                        <span class="text-gray-300 font-medium">Learn Traditional & Modern Garba steps</span>
+                    </div>
+                    <div class="flex items-center gap-4 p-3 rounded-lg bg-dark-800/50">
+                        <span class="material-icons text-blue-400">calendar_today</span>
+                        <span class="text-gray-300 font-medium">Monday to Friday</span>
+                    </div>
+                    <div class="flex items-center gap-4 p-3 rounded-lg bg-dark-800/50">
+                        <span class="material-icons text-purple-400">wb_twilight</span>
+                        <span class="text-gray-300 font-medium">6:00 PM - 7:00 PM</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Garba Styles Card -->
+            <div class="glass-card rounded-2xl p-8 hover-lift">
+                <h3 class="text-2xl font-serif font-bold text-gold-400 mb-6 flex items-center gap-3">
+                    <span class="material-icons text-3xl">music_note</span>
+                    Garba Styles
+                </h3>
+                <div class="grid grid-cols-2 gap-3">
+                    <!-- @MAP: garbaStyles.map(style => ( -->
+                    <div class="bg-gradient-to-r from-gold-500/10 to-gold-600/10 border border-gold-400/20 rounded-lg p-3 text-center hover:border-gold-400/40 transition-colors">
+                        <span class="text-gold-300 font-medium">2 tali- 3 tali</span>
+                    </div>
+                    <div class="bg-gradient-to-r from-purple-500/10 to-purple-600/10 border border-purple-400/20 rounded-lg p-3 text-center hover:border-purple-400/40 transition-colors">
+                        <span class="text-purple-300 font-medium">Timli</span>
+                    </div>
+                    <div class="bg-gradient-to-r from-emerald-500/10 to-emerald-600/10 border border-emerald-400/20 rounded-lg p-3 text-center hover:border-emerald-400/40 transition-colors">
+                        <span class="text-emerald-300 font-medium">Titodo</span>
+                    </div>
+                    <div class="bg-gradient-to-r from-blue-500/10 to-blue-600/10 border border-blue-400/20 rounded-lg p-3 text-center hover:border-blue-400/40 transition-colors">
+                        <span class="text-blue-300 font-medium">Dodhiyu</span>
+                    </div>
+                    <div class="bg-gradient-to-r from-red-500/10 to-red-600/10 border border-red-400/20 rounded-lg p-3 text-center hover:border-red-400/40 transition-colors">
+                        <span class="text-red-300 font-medium">Be Taali</span>
+                    </div>
+                    <div class="bg-gradient-to-r from-indigo-500/10 to-indigo-600/10 border border-indigo-400/20 rounded-lg p-3 text-center hover:border-indigo-400/40 transition-colors">
+                        <span class="text-indigo-300 font-medium">Sanedo</span>
+                    </div>
+                    <!-- @END_MAP )) -->
+                </div>
+            </div>
+        </div>
+        <!-- @END_COMPONENT: Class Details Grid -->
+
+        <!-- @COMPONENT: Instructor Section -->
+        <div class="glass-card rounded-2xl p-8 hover-lift" id="instructor">
+            <h3 class="text-3xl font-serif font-bold text-gold-400 mb-8 text-center">Meet Your Instructor</h3>
+            <div class="grid md:grid-cols-3 gap-8 items-center">
+                <!-- Instructor Image Placeholder -->
+                <div class="md:col-span-1">
+                    <!-- Professional dance instructor portrait -->
+                    <img src="https://pixabay.com/get/g0b15048c56559081a4751d085f3106361204eef6d212d069e240981cb10a92f4534ebdb6bd028b7a89242219311c2662fb7b85b992033811a2443b4a7b20a0f8_1280.jpg" 
+                         alt="Shahil Chaudhari - Dance Instructor" 
+                         class="w-full h-80 object-cover rounded-2xl border-2 border-gold-400/30">
+                </div>
+                
+                <div class="md:col-span-2 space-y-6">
+                    <div>
+                        <h4 class="text-2xl font-serif font-bold text-white mb-2">Shahil Chaudhari</h4>
+                        <p class="text-lg text-gold-300 mb-4">Master Dance Instructor</p>
+                        <p class="text-gray-300 leading-relaxed">
+                            With over 15 years of dedicated practice and teaching experience, Shahil brings authentic traditional knowledge combined with modern teaching techniques to help students master the beautiful art of Garba.
+                        </p>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-gold-400/20 text-gold-300 text-sm px-4 py-2 rounded-full border border-gold-400/30">Expert Teacher</span>
+                        <span class="bg-emerald-400/20 text-emerald-300 text-sm px-4 py-2 rounded-full border border-emerald-400/30">Patient Guide</span>
+                        <span class="bg-purple-400/20 text-purple-300 text-sm px-4 py-2 rounded-full border border-purple-400/30">Friendly Mentor</span>
+                    </div>
+                    
+                    <div class="flex items-center gap-4 p-4 bg-dark-800/50 rounded-lg">
+                        <span class="material-icons text-gold-400">phone</span>
+                        <span class="text-gray-300 font-medium">Contact: 123-456-7890</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- @END_COMPONENT: Instructor Section -->
+
+        <!-- @COMPONENT: Location Section -->
+        <div class="glass-card rounded-2xl p-8 hover-lift">
+            <h3 class="text-2xl font-serif font-bold text-gold-400 mb-6 flex items-center gap-3">
+                <span class="material-icons text-3xl">location_on</span>
+                Location & Contact
+            </h3>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="space-y-4">
+                    <div>
+                        <h4 class="text-xl font-semibold text-white mb-2">RadheKrishna Dance Academy</h4>
+                        <p class="text-gray-300">123 Dance Street, City, State</p>
+                        <p class="text-gray-400 text-sm">Contact: 987-654-3210</p>
+                    </div>
+                    
+                    <div class="p-4 bg-dark-800/50 rounded-lg">
+                        <h5 class="font-semibold text-gold-300 mb-3">Follow us for updates</h5>
+                        <div class="flex gap-4">
+                            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" 
+                               class="flex items-center gap-2 text-pink-400 hover:text-pink-300 transition-colors">
+                                <span class="material-icons">camera_alt</span>
+                                Instagram
+                            </a>
+                            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" 
+                               class="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors">
+                                <span class="material-icons">facebook</span>
+                                Facebook
+                            </a>
+                            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" 
+                               class="flex items-center gap-2 text-red-400 hover:text-red-300 transition-colors">
+                                <span class="material-icons">play_circle</span>
+                                YouTube
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Map placeholder -->
+                <div class="bg-dark-800/50 rounded-lg p-6 flex items-center justify-center min-h-[200px] border border-dark-600">
+                    <div class="text-center">
+                        <span class="material-icons text-6xl text-gold-400 mb-4 block">map</span>
+                        <p class="text-gray-400">Interactive Map</p>
+                        <p class="text-sm text-gray-500">Coming Soon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- @END_COMPONENT: Location Section -->
+
+        <!-- @COMPONENT: Registration Form -->
+        <div class="glass-card rounded-2xl p-8 hover-lift" id="register">
+            <h3 class="text-3xl font-serif font-bold text-gold-400 mb-8 text-center">Register Now</h3>
+            
+            <form class="max-w-2xl mx-auto space-y-6" data-mock="true">
+                <!-- @STATE: formData:object = {name:'', phone:'', email:'', experience:''} -->
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="name" class="block text-gray-300 mb-2 font-medium">Full Name</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            class="w-full px-4 py-3 bg-dark-800/50 border border-dark-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gold-400 focus:border-transparent transition-all"
+                            placeholder="Enter your full name"
+                            data-bind="formData.name"
+                        />
+                    </div>
+                    
+                    <div>
+                        <label for="phone" class="block text-gray-300 mb-2 font-medium">Phone Number</label>
+                        <input 
+                            type="tel" 
+                            id="phone" 
+                            class="w-full px-4 py-3 bg-dark-800/50 border border-dark-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gold-400 focus:border-transparent transition-all"
+                            placeholder="Enter your phone number"
+                            data-bind="formData.phone"
+                        />
+                    </div>
+                </div>
+                
+                <div>
+                    <label for="email" class="block text-gray-300 mb-2 font-medium">Email Address</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        class="w-full px-4 py-3 bg-dark-800/50 border border-dark-600 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gold-400 focus:border-transparent transition-all"
+                        placeholder="Enter your email"
+                        data-bind="formData.email"
+                    />
+                </div>
+                
+                <div>
+                    <label for="experience" class="block text-gray-300 mb-2 font-medium">Dance Experience Level</label>
+                    <select 
+                        id="experience" 
+                        class="w-full px-4 py-3 bg-dark-800/50 border border-dark-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-gold-400 focus:border-transparent transition-all"
+                        data-bind="formData.experience"
+                    >
+                        <option value="" class="bg-dark-800">Select your experience level</option>
+                        <option value="beginner" class="bg-dark-800">Beginner (No experience)</option>
+                        <option value="intermediate" class="bg-dark-800">Intermediate (Some experience)</option>
+                        <option value="advanced" class="bg-dark-800">Advanced (Regular dancer)</option>
+                    </select>
+                </div>
+                
+                <button 
+                    type="submit" 
+                    class="w-full bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-dark-900 font-bold py-4 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+                    data-event="click:handleRegistration"
+                    data-implementation="Should validate form fields and submit registration data"
+                >
+                    <span class="flex items-center justify-center gap-2">
+                        <span class="material-icons">send</span>
+                        Submit Registration
+                    </span>
+                </button>
+            </form>
+            
+            <!-- Registration benefits -->
+            <div class="mt-8 grid md:grid-cols-3 gap-4 text-center">
+                <div class="p-4 bg-dark-800/30 rounded-lg">
+                    <span class="material-icons text-gold-400 text-2xl mb-2 block">verified</span>
+                    <p class="text-sm text-gray-300">Certified Training</p>
+                </div>
+                <div class="p-4 bg-dark-800/30 rounded-lg">
+                    <span class="material-icons text-emerald-400 text-2xl mb-2 block">groups</span>
+                    <p class="text-sm text-gray-300">Small Batch Size</p>
+                </div>
+                <div class="p-4 bg-dark-800/30 rounded-lg">
+                    <span class="material-icons text-purple-400 text-2xl mb-2 block">emoji_events</span>
+                    <p class="text-sm text-gray-300">Performance Opportunities</p>
+                </div>
+            </div>
+        </div>
+        <!-- @END_COMPONENT: Registration Form -->
+    </div>
+
+    <!-- @COMPONENT: Footer -->
+    <footer class="glass-card mt-16 border-t border-gold-400/20">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <div class="mb-4">
+                <h4 class="text-2xl font-serif font-bold text-gold-400 mb-2">RadheKrishna Garba Classes</h4>
+                <p class="text-gold-300 font-script text-lg">Celebrating the divine through dance</p>
+            </div>
+            
+            <div class="border-t border-dark-600 pt-4">
+                <p class="text-gray-400 text-sm">
+                    &copy; 2023 RadheKrishna Garba Classes. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <script>
+        // TODO: Implement registration form validation and submission
+        // TODO: Add smooth scrolling for navigation links
+        // TODO: Implement mobile menu toggle functionality
+        // TODO: Add form validation before submission
+        
+        (function() {
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Form interaction feedback
+            const formInputs = document.querySelectorAll('input, select');
+            formInputs.forEach(input => {
+                input.addEventListener('focus', function() {
+                    this.parentElement.classList.add('focused');
+                });
+                
+                input.addEventListener('blur', function() {
+                    this.parentElement.classList.remove('focused');
+                });
+            });
+
+            // Add loading state to registration button
+            const registerForm = document.querySelector('form');
+            const submitButton = document.querySelector('button[type="submit"]');
+            
+            if (registerForm && submitButton) {
+                registerForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    // TODO: Add actual form submission logic here
+                    
+                    // Visual feedback
+                    submitButton.innerHTML = '<span class="flex items-center justify-center gap-2"><span class="material-icons animate-spin">refresh</span>Submitting...</span>';
+                    submitButton.disabled = true;
+                    
+                    // Simulate submission delay
+                    setTimeout(() => {
+                        submitButton.innerHTML = '<span class="flex items-center justify-center gap-2"><span class="material-icons">check_circle</span>Registration Submitted!</span>';
+                        submitButton.classList.add('bg-emerald-500', 'hover:bg-emerald-600');
+                        submitButton.classList.remove('bg-gradient-to-r', 'from-gold-500', 'to-gold-600');
+                    }, 2000);
+                });
+            }
+        })();
+    </script>
+</body>
+</html>
