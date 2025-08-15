@@ -111,7 +111,7 @@ export default function Home() {
         </div>
       </nav>
 
-      <div className="container mx-auto px-4 py-8 space-y-8">
+      <div className="container mx-auto px-4 py-4 space-y-4">
         {/* Hero Section */}
         <div className="glass-card rounded-2xl p-4 md:p-4 hover-lift relative overflow-hidden">
           <div className="relative z-10">
@@ -151,16 +151,21 @@ export default function Home() {
             alt="Hero Decorative"
             className="
     absolute
-    sm:right-4 sm:w-56 sm:h-32 sm:bottom-4
-    md:right-15 md:w-78 md:h-40 md:bottom-9
-    lg:right-30 lg:w-96 lg:h-56 lg:bottom-2
+    bottom-0
+    right-4
+    w-40
+    h-24
+    sm:right-10 sm:w-56 sm:h-32
+    md:right-8 md:w-77 md:h-42 md:bottom-9
+    lg:right-10 lg:w-96 lg:h-56 lg:bottom-2
     object-cover
     rounded-2xl
-    opacity-90
+    opacity-80
     pointer-events-none
   "
             style={{ zIndex: 1 }}
           />
+
         </div>
 
         {/* Class Details Grid */}
